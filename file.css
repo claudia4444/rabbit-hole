@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding: 40px 20px;
+  font-family: 'Quicksand', sans-serif;
+  background-image: linear-gradient(rgba(255,255,255,0.17), rgba(255,255,255,0.25)), url(fondo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* opcional: que no se mueva al hacer scroll */
+}
+
+/* --- Título grande centrado en violeta --- */
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  text-align: center;
+  margin: 70px 40px;
+  text-shadow: 1px 1px 3px #ffffff80;
+  background-color: grey;
+  border-style: double;
+  border-width: 6px;
+  border-color: #FFD700;
+  padding: 20px;
+}
+
+/* --- Contenedor de imagen, transparente --- */
+#imagen-container {
+  width: 60%;
+  max-width: 400px;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #d0d0d0aa;
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 0 auto;
+  border: 6px double #FFD700;
+}
+
+#imagen-container.con-imagen {
+  background-color: #ffffff40;
+}
+
+#texto-placeholder {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem;
+  color: #666;
+  text-align: center;
+  padding: 0 20px;
+  margin: 0;
+}
+
+#imagen-aleatoria {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: none;
+}
+
+/* --- Pregunta: mismo estilo que el título pero más pequeña --- */
+
+/* --- Input grande --- */
+#input-usuario {
+  width: 30ch;      /* antes: auto */
+  min-width: 30ch;  /* antes: 50px */
+  max-width: 60vw;
+  padding: 18px 20px;
+  font-size: 1.1rem;
+  font-family: 'Quicksand', sans-serif;
+  border: 6px double #FFD700;
+  border-radius: 16px;
+  background-color: #ffffff60;
+  color: #4a2a5a;
+  outline: none;
+  box-shadow: 0 2px 8px #00000015;
+  transition: width 0.2s ease, height 0.2s ease;
+  display: block;
+  margin: 0 auto;
+  box-sizing: border-box;
+  resize: none;
+  overflow-y: hidden; /* antes: auto */
+  white-space: pre-wrap;
+}
+#boton-guardar {
+  display: block;
+  margin: 10px auto 0;
+  padding: 10px 24px;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1rem;
+  border: 6px double #FFD700;
+  border-radius: 16px;
+  background-color: #ffffff60;
+  color: #4a2a5a;
+  cursor: pointer;
+}
